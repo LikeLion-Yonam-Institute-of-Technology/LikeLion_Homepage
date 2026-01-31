@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 const navItems = [
   { label: "홈", href: "/" },
@@ -35,14 +36,21 @@ export function Navbar() {
     >
       <div className="mx-auto max-w-6xl px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link
-            href="/"
-            className={`text-2xl transition-colors ${
-              isSolid ? "text-[#FF6000]" : "text-white"
-            }`}
-            style={{ fontFamily: "SUITE Variable, sans-serif" }}
-          >
-            LIKELION
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/assets/gallery/likelion_logo.png"
+              alt="LIKELION BI"
+              width={32}
+              height={32}
+            />
+            <span
+              className={`text-2xl transition-colors ${
+                isSolid ? "text-[#FF6000]" : "text-white"
+              }`}
+              style={{ fontFamily: "SUITE Variable, sans-serif" }}
+            >
+              LIKELION
+            </span>
           </Link>
 
           <div className="hidden items-center gap-8 md:flex">

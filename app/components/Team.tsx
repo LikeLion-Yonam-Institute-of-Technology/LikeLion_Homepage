@@ -6,33 +6,25 @@ export function Team() {
     <section className="bg-[#F9F9F9] px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <h2
-          className="mb-4 text-center text-4xl md:text-5xl"
+          className="mb-2 text-center text-4xl md:text-5xl"
           style={{ fontFamily: "SUITE Variable, sans-serif", color: "#1C1C1C" }}
         >
           운영진 소개
         </h2>
         <p
-          className="mb-16 text-center text-gray-600"
+          className="mb-12 text-center text-gray-600"
           style={{ fontFamily: "Pretendard Variable, sans-serif" }}
         >
-          열정과 전문성을 갖춘 운영진이 여러분의 성장을 돕습니다
+          14기 운영진
         </p>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {teamMembers.map((member) => (
             <div
               key={member.name}
               className="overflow-hidden rounded-2xl bg-white transition-shadow hover:shadow-xl"
             >
-              <div className="aspect-square overflow-hidden bg-gray-100">
-                {member.image ? (
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
-                  />
-                ) : null}
-              </div>
+              <div className="aspect-square overflow-hidden bg-gray-100" />
               <div className="p-6">
                 <h3
                   className="mb-1 text-xl"
@@ -53,24 +45,24 @@ export function Team() {
                   {member.description}
                 </p>
                 <div className="flex gap-3">
-                  <a
-                    href="#"
+                  <button
                     className="text-gray-400 transition-colors hover:text-[#FF6000]"
+                    type="button"
                   >
                     <Github className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="#"
+                  </button>
+                  <button
                     className="text-gray-400 transition-colors hover:text-[#FF6000]"
+                    type="button"
                   >
                     <Linkedin className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="#"
+                  </button>
+                  <button
                     className="text-gray-400 transition-colors hover:text-[#FF6000]"
+                    type="button"
                   >
                     <Mail className="h-5 w-5" />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

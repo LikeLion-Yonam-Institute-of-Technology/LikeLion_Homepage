@@ -1,12 +1,10 @@
-export const generations = [
-  "16기",
-];
+export const generations = ["14기"];
 
 export const allProjects = [
   {
-    generation: "16기",
-    title: "멋쟁이사자 홈페이지",
-    description: "멋쟁이사자 홈페이지제작",
+    generation: "14기",
+    title: "예시 프로젝트",
+    description: "14기 프로젝트 예시 설명 문구입니다.",
     image: "/assets/Hompage.png",
     tags: ["Next.js", "TypeScript"],
   },

@@ -10,7 +10,7 @@ interface ProjectsProps {
 
 export function Projects({ showFullPage = false }: ProjectsProps) {
   const [selectedGeneration, setSelectedGeneration] = useState(
-    generations[0] ?? "16기"
+    generations[0] ?? "14기"
   );
 
   const filteredProjects =

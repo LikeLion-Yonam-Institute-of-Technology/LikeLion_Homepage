@@ -26,7 +26,7 @@ export function Footer() {
             className="inline-flex items-center gap-2 text-gray-300"
             style={{ fontFamily: "Pretendard Variable, sans-serif" }}
           >
-            멋쟁이사자처럼 연암공과대학교 16기
+            멋쟁이사자처럼 연암공과대학교 14기
           </span>
         </div>
         <div

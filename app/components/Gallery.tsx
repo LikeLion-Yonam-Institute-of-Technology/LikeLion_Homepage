@@ -9,7 +9,6 @@ interface GalleryProps {
   showFilter?: boolean;
 }
 
-
 export function Gallery({ showFilter = false }: GalleryProps) {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [selectedTrack, setSelectedTrack] = useState<
