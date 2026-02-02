@@ -24,7 +24,15 @@ export function Team() {
               key={member.name}
               className="overflow-hidden rounded-2xl bg-white transition-shadow hover:shadow-xl"
             >
-              <div className="aspect-square overflow-hidden bg-gray-100" />
+              <div className="aspect-square overflow-hidden bg-gray-100">
+                {member.image ? (
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="h-full w-full object-cover"
+                  />
+                ) : null}
+              </div>
               <div className="p-6">
                 <h3
                   className="mb-1 text-xl"

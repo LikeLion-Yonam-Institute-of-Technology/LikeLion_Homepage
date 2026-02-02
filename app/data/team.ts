@@ -3,7 +3,7 @@ export const teamMembers = [
     name: "이효준",
     role: "대표",
     description: "전체 기수 운영 총괄 및 대외 협력",
-    image: "",
+    image: "/assets/teams/EHJ.jpg",
     generation: "14기",
   },
   {
@@ -24,7 +24,7 @@ export const teamMembers = [
     name: "양희승",
     role: "프론트 트랙 운영진",
     description: "프론트 트랙 강의 및 행사 운영",
-    image: "",
+    image: "/assets/teams/YHS.png",
     generation: "14기",
   },
   {
