@@ -34,7 +34,7 @@ export function Navbar() {
         isSolid ? "bg-white/95 shadow-md backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-6xl px-6 py-4">
+      <div className="relative mx-auto max-w-6xl px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <Image
@@ -86,8 +86,14 @@ export function Navbar() {
           </button>
         </div>
 
-        {isMobileMenuOpen && (
-          <div className="mt-4 pb-4 md:hidden">
+        <div className="absolute left-0 right-0 top-full md:hidden">
+          <div
+            className={`w-full origin-top bg-white/80 p-5 shadow-lg backdrop-blur-md transition-all duration-200 ease-out ${
+              isMobileMenuOpen
+                ? "translate-y-0 scale-100 opacity-100"
+                : "-translate-y-2 scale-95 opacity-0 pointer-events-none"
+            }`}
+          >
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link
@@ -102,7 +108,7 @@ export function Navbar() {
               ))}
             </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );

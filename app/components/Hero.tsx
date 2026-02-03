@@ -5,7 +5,7 @@ export function Hero() {
     <section className="relative flex min-h-screen flex-col items-center justify-center bg-[#FF6000] px-6 text-white">
       <div className="w-full max-w-5xl text-center">
         <h1
-          className="mb-6 text-6xl md:text-8xl"
+          className="mb-6 text-4xl sm:text-5xl md:text-7xl"
           style={{ fontFamily: "SUITE Variable, sans-serif" }}
         >
           멋쟁이 사자처럼
