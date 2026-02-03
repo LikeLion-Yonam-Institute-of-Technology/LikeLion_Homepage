@@ -5,20 +5,24 @@ export function Footer() {
     <footer className="bg-[#2A2A2A] px-6 py-12 text-white">
       <div className="mx-auto max-w-4xl">
         <div className="mb-8 flex justify-center gap-6">
-          <button
-            type="button"
+          <a
+            href="https://www.instagram.com/likelion_yc/?hl=ko"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex h-14 w-14 items-center justify-center rounded-full bg-[#3A3A3A] transition-colors hover:bg-[#FF6000]"
             aria-label="Instagram"
           >
             <Instagram className="h-6 w-6" />
-          </button>
-          <button
-            type="button"
+          </a>
+          <a
+            href="https://github.com/LikeLion-Yonam-Institute-of-Technology"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex h-14 w-14 items-center justify-center rounded-full bg-[#3A3A3A] transition-colors hover:bg-[#FF6000]"
             aria-label="Github"
           >
             <Github className="h-6 w-6" />
-          </button>
+          </a>
         </div>
 
         <div className="mb-8 text-center">

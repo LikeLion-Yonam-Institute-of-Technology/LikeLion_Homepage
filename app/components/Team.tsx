@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Instagram } from "lucide-react";
 import { teamMembers } from "@/app/data/team";
 
 export function Team() {
@@ -53,24 +53,26 @@ export function Team() {
                   {member.description}
                 </p>
                 <div className="flex gap-3">
-                  <button
-                    className="text-gray-400 transition-colors hover:text-[#FF6000]"
-                    type="button"
-                  >
-                    <Github className="h-5 w-5" />
-                  </button>
-                  <button
-                    className="text-gray-400 transition-colors hover:text-[#FF6000]"
-                    type="button"
-                  >
-                    <Linkedin className="h-5 w-5" />
-                  </button>
-                  <button
-                    className="text-gray-400 transition-colors hover:text-[#FF6000]"
-                    type="button"
-                  >
-                    <Mail className="h-5 w-5" />
-                  </button>
+                  {member.links.github ? (
+                    <a
+                      href={member.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 transition-colors hover:text-[#FF6000]"
+                    >
+                      <Github className="h-5 w-5" />
+                    </a>
+                  ) : null}
+                  {member.links.instagram ? (
+                    <a
+                      href={member.links.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 transition-colors hover:text-[#FF6000]"
+                    >
+                      <Instagram className="h-5 w-5" />
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </div>
