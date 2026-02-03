@@ -51,7 +51,7 @@ export const teamMembers = [
     generation: "14기",
     links: {
       github: "https://github.com/kimjunseong04",
-      instagram: "",
+      instagram: "https://www.instagram.com/kimjunseong04/?hl=ko",
     },
   },
 ];
