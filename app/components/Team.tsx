@@ -3,11 +3,11 @@ import { teamMembers } from "@/app/data/team";
 
 export function Team() {
   return (
-    <section className="bg-[#F9F9F9] px-6 py-20">
+    <section className="bg-white px-6 py-20">
       <div className="mx-auto max-w-6xl">
         <h2
           className="mb-2 text-center text-4xl md:text-5xl"
-          style={{ fontFamily: "SUITE Variable, sans-serif", color: "#1C1C1C" }}
+          style={{ fontFamily: "SUITE Variable, sans-serif"}}
         >
           운영진 소개
         </h2>
