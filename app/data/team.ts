@@ -31,7 +31,7 @@ export const teamMembers = [
     name: "김준성",
     role: "프론트 트랙 운영진",
     description: "프론트 트랙 강의 및 행사 운영",
-    image: "",
+    image: "/assets/teams/KJS.png",
     generation: "14기",
   },
 ];
