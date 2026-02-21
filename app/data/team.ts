@@ -25,7 +25,7 @@ export const teamMembers = [
     name: "조소영",
     role: "백엔드 트랙 운영진",
     description: "백엔드 트랙 강의 및 행사 운영",
-    image: "",
+    image: "/assets/teams/JSY.png",
     generation: "14기",
     links: {
       github: "https://github.com/FLOHERE",
