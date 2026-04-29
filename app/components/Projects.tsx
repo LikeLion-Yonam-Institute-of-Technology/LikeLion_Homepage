@@ -60,7 +60,10 @@ export function Projects({ showFullPage = false }: ProjectsProps) {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {visibleProjects.map((project) => (
-            <div
+            <Link
+              href={project.gitUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               key={`${project.generation}-${project.title}`}
               className="group cursor-pointer overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
@@ -95,6 +98,14 @@ export function Projects({ showFullPage = false }: ProjectsProps) {
                 >
                   {project.description}
                 </p>
+                <p
+                  className="mb-2 text-sm text-gray-600 whitespace-pre-wrap"
+                  style={{ fontFamily: "Pretendard Variable, sans-serif" }}
+                >
+                  참여 인원: {project.members[0]}
+                  {project.members.slice(1).map(member => `
+                 ${member}`).join("")}
+                </p>
 
                 <div className="flex flex-wrap gap-2">
                   {project.tags.slice(0, 3).map((tag) => (
@@ -108,7 +119,7 @@ export function Projects({ showFullPage = false }: ProjectsProps) {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
